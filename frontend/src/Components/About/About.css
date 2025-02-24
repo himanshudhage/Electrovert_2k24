@@ -1,0 +1,241 @@
+/* Container for About section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Adjust height as necessary */
+    margin-top: 50px; /* Increase gap above the About section */
+}
+
+/* Content styling */
+.about-content {
+    backdrop-filter: blur(10px); /* Blur background */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    max-width: 600px;
+    width: 100%;
+    font-family: 'Helios', sans-serif;
+    color: white;
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.about-content:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), /* Brighter blur shadow */
+                0 0 25px rgba(255, 255, 255, 0.5); /* Larger blur shadow */
+}
+
+/* Text styling */
+.about-text h2 {
+    font-family: 'Blackpast', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    font-family: 'Helios', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+/* Base styling for the About section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin-top: 50px;
+    padding: 0 15px; /* Add padding to ensure space on smaller devices */
+}
+
+/* Base content styling */
+.about-content {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    font-family: 'Helios', sans-serif;
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.about-content:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7),
+                0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+/* Text styling */
+.about-text h2 {
+    font-family: 'Blackpast', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    font-family: 'Helios', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Responsive styling for common mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 30px; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Ensure content takes full width */
+        border-radius: 8px; /* Slightly reduce border-radius */
+    }
+
+    .about-text h2 {
+        font-size: 32px; /* Decrease heading size */
+    }
+
+    .about-text p {
+        font-size: 16px; /* Reduce font size for better readability */
+    }
+}
+
+/* More specific mobile optimization (max-width: 480px) */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 0 10px; /* Add extra padding on small devices */
+    }
+
+    .about-content {
+        padding: 20px; /* Further reduce padding */
+    }
+
+    .about-text h2 {
+        font-size: 28px; /* Decrease heading size for smaller screens */
+    }
+
+    .about-text p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+}
+
+/* For extremely small screens (max-width: 360px), like Samsung Galaxy A51 */
+@media (max-width: 360px) {
+    .about-container {
+        margin-top: 30px; /* Decrease margin */
+    }
+
+    .about-content {
+        padding: 15px; /* Compact padding for very small screens */
+    }
+
+    .about-text h2 {
+        font-size: 24px; /* Further decrease heading size */
+    }
+
+    .about-text p {
+        font-size: 12px; /* Ensure text is readable on tiny screens */
+    }
+}
+/* Container for About section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Adjust height as necessary */
+    margin-top: 50px; /* Increase gap above the About section */
+    padding: 0 15px; /* Padding to avoid content touching the edges */
+    width: 100%; /* Ensure the container takes full width */
+    box-sizing: border-box; /* Include padding and margin in width */
+}
+
+/* Content styling */
+.about-content {
+    backdrop-filter: blur(10px); /* Blur background */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    max-width: 600px;
+    width: 100%; /* Ensure it takes full width inside the container */
+    font-family: 'Helios', sans-serif;
+    color: white;
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-sizing: border-box; /* Include padding and margin in width */
+    text-align: center; /* Center the text content */
+}
+
+/* Text styling */
+.about-text h2 {
+    font-family: 'Blackpast', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    font-family: 'Helios', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 30px;
+        max-width: 100%; /* Ensure content takes full width on smaller devices */
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 0 10px; /* Reduce padding for small devices */
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
+
+/* Very small devices like Samsung Galaxy A51 and A71 */
+@media (max-width: 360px) {
+    .about-container {
+        margin-top: 30px;
+        padding: 0 8px; /* Ensure some padding on very small screens */
+    }
+
+    .about-content {
+        padding: 15px;
+        max-width: 100%; /* Ensure content fills the container */
+        margin: 0 auto; /* Ensure it's centered */
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+}

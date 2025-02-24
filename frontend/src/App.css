@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's width and height */
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Apply globally */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    width: 100%; /* Ensure content stays within the viewport */
+    overflow-x: hidden; /* Prevent horizontal scroll within main content */
+}
+
+.section {
+    padding: 20px;
+    max-width: 100%; /* Prevent section from exceeding the viewport width */
+}

@@ -1,0 +1,235 @@
+/* Responsive Codehunt.css */
+body {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section-padding {
+  padding: 5vw 0; /* Use viewport width for scalable padding */
+}
+
+.section-title-header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.section-title-header p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.feature {
+  color: white;
+  border-radius: 8px;
+  padding: 2vw;
+  text-align: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  height: auto; /* Make the height responsive */
+  max-width: 90%; /* Ensure responsiveness by limiting the width */
+  margin: 10px auto; /* Add margin for spacing */
+}
+
+.price-block-wrapper {
+  background: rgba(255, 253, 253, 0.1);
+  border-radius: 8px;
+  padding: 5vw;
+  text-align: center;
+  width: 100%; /* Set width to 100% for mobile */
+  max-width: 330px; /* Limit the width for larger screens */
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.price-block-wrapper h2 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.banner-btn .btn-common {
+  background: #FF5722;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 2vw; /* Use viewport-based padding for flexibility */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  max-width: 200px;
+  margin: 0 auto; /* Center the button */
+}
+
+.contact-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-wrapper li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-wrapper i {
+  margin-right: 10px;
+  color: #FF5722;
+}
+
+.row {
+  /* display: flex; */
+  /* flex-wrap: wrap; Add wrapping for smaller screens */
+  /* justify-content: center; */
+  gap: 5vw; /* Use viewport-based gap for scaling */
+}
+
+.hi {
+  border: 2px solid #ebeaea;
+  width: 100%; /* Make the width flexible */
+  max-width: 400px; /* Ensure the width doesn't exceed 400px */
+  margin: 0 auto;
+}
+
+.feature {
+  height: auto; /* Make height flexible */
+}
+
+.price {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.banner-btn {
+  position: relative;
+  left: 10%; /* Use percentage-based positioning for responsiveness */
+  top: 40px;
+  padding-bottom: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Media queries for further responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .section-title-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-title-header p {
+    font-size: 1rem;
+  }
+
+  .price-block-wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+  .banner-btn .btn-common {
+    font-size: 0.9rem;
+  }
+
+  .row {
+    gap: 20px;
+  }
+
+  .banner-btn {
+    left: 0;
+    top: 20px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .section-title-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-title-header p {
+    font-size: 0.9rem;
+  }
+
+  .price-block-wrapper {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .banner-btn .btn-common {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .banner-btn {
+    left: 0;
+    top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.bt
+{
+  text-decoration: none;
+  color:#ebeaea
+}
+.b {
+  background-color: #FF5722;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 60px;
+  margin: 50px auto; /* Centers the button horizontally */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .b {
+    width: 180px;
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+  .b {
+    width: 150px;
+    font-size: 16px;
+    height: 45px;
+  }
+}
+/* Initial styling for .price-block-wrapper */
+.price-block-wrapper {
+  background: rgba(255, 253, 253, 0.1);
+  border-radius: 8px;
+  padding: 5vw;
+  text-align: center;
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for .price-block-wrapper */
+.price-block-wrapper:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), /* Brighter blur shadow */
+              0 0 25px rgba(255, 255, 255, 0.5); /* Larger blur shadow */
+}
+.c
+{
+  display: flex;
+  justify-content: center;
+}

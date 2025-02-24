@@ -1,0 +1,222 @@
+/* Responsive BidingBiome.css */
+body {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section-padding {
+  padding: 5vw 0;
+}
+
+.section-title-header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.section-title-header p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.feature {
+  color: white;
+  border-radius: 8px;
+  padding: 2vw;
+  text-align: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  height: auto;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.price-block-wrapper {
+  background: rgba(255, 253, 253, 0.1);
+  border-radius: 8px;
+  padding: 5vw;
+  text-align: center;
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.price-block-wrapper h2 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.banner-btn .btn-common {
+  background: #FF5722;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.contact-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-wrapper li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-wrapper i {
+  margin-right: 10px;
+  color: #FF5722;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+  padding-top: 40px;
+}
+
+.hi {
+  border: 2px solid #ebeaea;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: none;
+}
+
+.banner-btn {
+  position: relative;
+  left: 10%;
+  top: 40px;
+  padding-bottom: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Media queries for tablets */
+@media (max-width: 768px) {
+  .section-title-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-title-header p {
+    font-size: 1rem;
+  }
+
+  .price-block-wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+  .banner-btn .btn-common {
+    font-size: 0.9rem;
+  }
+
+  .row {
+    gap: 30px;
+  }
+
+  .banner-btn {
+    left: 0;
+    top: 20px;
+  }
+}
+
+/* Media queries for mobile */
+@media (max-width: 480px) {
+  .section-title-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-title-header p {
+    font-size: 0.9rem;
+  }
+
+  .price-block-wrapper {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .banner-btn .btn-common {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .banner-btn {
+    left: 0;
+    top: 10px;
+    padding-bottom: 30px;
+  }
+}
+.r{
+    padding: 0;
+    margin: 0;
+}
+.bt
+{
+  text-decoration: none;
+  color:#ebeaea
+}
+.b {
+  background-color: #FF5722;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 60px;
+  margin: 50px auto; /* Centers the button horizontally */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .b {
+    width: 180px;
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+  .b {
+    width: 150px;
+    font-size: 16px;
+    height: 45px;
+  }
+}
+/* Initial styling for .price-block-wrapper */
+.price-block-wrapper {
+  background: rgba(255, 253, 253, 0.1);
+  border-radius: 8px;
+  padding: 5vw;
+  text-align: center;
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for .price-block-wrapper */
+.price-block-wrapper:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), /* Brighter blur shadow */
+              0 0 25px rgba(255, 255, 255, 0.5); /* Larger blur shadow */
+}

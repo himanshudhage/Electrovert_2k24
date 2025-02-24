@@ -1,0 +1,112 @@
+/* Footer Styling */
+.mainfooter {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 40px 0; /* Top and bottom padding */
+}
+
+.footer-pad {
+    padding: 20px; /* Padding around content */
+}
+
+.footer-pad h4 {
+    color: #fff; /* White text for headings */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-unstyled .text {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ccc; /* Slightly lighter text color */
+}
+
+.social-network {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+}
+
+.social-network li {
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.social-network a {
+    color: #fff; /* White icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-network a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
+.copy {
+    text-align: center; /* Center text in the footer bottom section */
+    margin-top: 20px;
+}
+
+.copy .footerb {
+    font-size: 14px;
+    color: #aaa; /* Lighter text color for footer note */
+}
+/* Style for social media icons */
+.social-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    margin: 0 10px; /* Space between icons */
+    vertical-align: middle; /* Align with text */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+/* Style for social media icons */
+.social-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    margin: 0 10px; /* Space between icons */
+    vertical-align: middle; /* Align with text */
+    background-size: cover; /* Ensure the image covers the icon size */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+/* Assign different images to each social media icon */
+.icon-facebook {
+    background-image: url('/src/assets/img/facebook.png'); /* Facebook icon */
+}
+
+.icon-twitter {
+    background-image: url('/src/assets/img/twitter.png'); /* Twitter icon */
+}
+
+.icon-instagram {
+    background-image: url('/src/assets/img/instagram.png'); /* Instagram icon */
+}
+
+.icon-message {
+    background-image: url('/src/assets/img/message (1).png'); /* Message icon */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+.social-icon {
+    width: 24px; /* Adjust as needed */
+    height: 24px;
+    margin: 0 10px; /* Spacing between icons */
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}

@@ -1,0 +1,7 @@
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will center them vertically, optional */
+    gap: 20px; /* Adjust the spacing between About and Slider, optional */
+  }
+  

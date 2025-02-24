@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* 
+* {
+  margin: 0;
+  padding: 0;
+} */
+
+/* General Icon Styling */
+i {
+  margin-right: 10px;
+}
+
+/* Navbar Styling */
+.navbar-logo {
+  padding: 15px;
+  color: #fff;
+}
+
+.navbar-mainbg {
+  background-color: #4caf50; /* Green */
+  padding: 0; /* Ensure padding is zero for correct height */
+}
+
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+  height: 60px; /* Set a fixed height for the navbar */
+}
+
+#navbarSupportedContent ul {
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flex layout for horizontal alignment */
+  list-style-type: none;
+  height: 100%; /* Ensure list items align with navbar height */
+}
+
+#navbarSupportedContent ul li {
+  float: left;
+  height: 100%; /* Make list items take full height of navbar */
+}
+
+#navbarSupportedContent ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 15px 20px; /* Adjust padding for alignment */
+  height: 100%; /* Ensure links take full height */
+  line-height: 60px; /* Vertically center the text */
+  transition: color 0.6s, background-color 0.6s;
+  position: relative;
+}
+
+#navbarSupportedContent ul li a:hover,
+#navbarSupportedContent ul li.active a {
+  color: #4caf50; /* Green */
+  background-color: transparent;
+}
+
+.hori-selector {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 10px;
+}
+
+.hori-selector .right,
+.hori-selector .left {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  bottom: 10px;
+}
+
+.hori-selector .right {
+  right: -25px;
+}
+
+.hori-selector .left {
+  left: -25px;
+}
+
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4caf50; /* Green */
+}
+
+.hori-selector .right:before {
+  bottom: 0;
+  right: -25px;
+}
+
+.hori-selector .left:before {
+  bottom: 0;
+  left: -25px;
+}
+
+/* Responsive Navbar Adjustments */
+@media (min-width: 992px) {
+  .navbar-expand-custom {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #navbarSupportedContent ul {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+  #navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+  .hori-selector {
+    margin-top: 0;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}
+
+/* Navbar Nav Item Spacing */
+.navbar-nav li {
+  margin-right: 20px; /* Increase the gap between list items */
+}
+
+.nav-link {
+  padding: 15px 20px; /* Adjust the padding around each link for alignment */
+}

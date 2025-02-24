@@ -1,0 +1,374 @@
+@font-face {
+  font-family: 'Blackpast';
+  src: url('https://metamorphosis.wcewlug.org/fonts/ttf/blackpast-blackpast-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helios';
+  src: url('https://metamorphosis.wcewlug.org/fonts/helios-regular.ttf') format('truetype');
+}
+
+.heading-container {
+  text-align: center;
+  color: rgb(250, 250, 250);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 100px; /* Adjust to ensure space for the logo */
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  animation: blink 1.5s infinite;
+}
+
+/* Blinking light animation */
+@keyframes blink {
+  0% {
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+  50% {
+      filter: drop-shadow(0 0 10px rgba(25, 7, 7, 0.8));
+  }
+  100% {
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  }
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1, h3, h4, h5 {
+  margin: 15px 0;
+  color: #D3C1E7;
+  text-shadow: 0 0 5px #1f131366,
+               0 0 10px rgba(255, 255, 255, 0.2),
+               0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  font-family: 'Blackpast', sans-serif;
+  font-size: 104px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
+               0 0 20px rgba(255, 255, 255, 0.2),
+               0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+  font-family: 'Helios', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Helios', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: 'Helios', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heading-container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  
+  .logo {
+    width: 100px;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .text-content {
+    margin-top: 10px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+}
+@font-face {
+  font-family: 'Blackpast';
+  src: url('https://metamorphosis.wcewlug.org/fonts/ttf/blackpast-blackpast-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helios';
+  src: url('https://metamorphosis.wcewlug.org/fonts/helios-regular.ttf') format('truetype');
+}
+
+/* Applying font-family to the .hi class */
+.hi {
+  font-family: 'Blackpast', sans-serif; /* Use Blackpast font */
+  font-size: 18px;
+  color: #333; /* Adjust color if needed */
+}
+
+.hi .feature {
+  font-family: 'Helios', sans-serif; /* Use Helios for feature text */
+  font-size: 16px;
+  margin-top: 10px;
+}
+  
+.bt
+{
+  text-decoration: none;
+  color:#ebeaea
+}
+.b {
+  background-color: #FF5722;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 60px;
+  margin: 50px auto; /* Centers the button horizontally */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .b {
+    width: 180px;
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+  .b {
+    width: 150px;
+    font-size: 16px;
+    height: 45px;
+  }
+}
+/* Hover effect for the register button */
+.b:hover {
+  background-color: #E64A19; /* Slightly darker shade of the original color */
+  transform: scale(1.05); /* Slightly enlarges the button */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for a 3D effect */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
+/* Ensuring a smooth transition for non-hover state as well */
+.b {
+  background-color: #FF5722;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 60px;
+  margin: 50px auto;
+  transition: all 0.3s ease; /* Ensures smooth transition for changes */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .b {
+    width: 180px;
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+  .b {
+    width: 150px;
+    font-size: 16px;
+    height: 45px;
+  }
+}
+/* General responsive styling for larger screens */
+@media (min-width: 1024px) {
+  .heading-container {
+    margin-top: 150px;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 120px;
+  }
+  
+  h3 {
+    font-size: 36px;
+  }
+  
+  h4 {
+    font-size: 32px;
+  }
+  
+  h5 {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 180px;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+/* Ensure proper scaling for smaller tablets and large mobile devices */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .heading-container {
+    margin-top: 120px;
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 4.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.75rem;
+  }
+  
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 120px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/* Already present: Adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+  .heading-container {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+/* Mobile phones (smaller than 480px) */
+@media (max-width: 480px) {
+  .heading-container {
+    margin-top: 50px;
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  h4 {
+    font-size: 1.125rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+    top: 5px;
+    left: 5px;
+  }
+}
+/* iPhone 14, 15, and 16 (Common resolution widths: 390px - 430px) */
+@media (max-width: 430px) and (min-width: 390px) {
+  .heading-container {
+    margin-top: 60px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjusted for smaller mobile screens */
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .b {
+    width: 150px; /* Adjust button size */
+    font-size: 16px;
+    height: 45px;
+  }
+
+  /* Ensure button hover effect is maintained */
+  .b:hover {
+    transform: scale(1.05); /* Slight increase for hover effect */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+}

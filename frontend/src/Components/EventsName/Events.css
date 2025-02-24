@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@font-face {
+    font-family: 'Blackpast';
+    src: url('https://metamorphosis.wcewlug.org/fonts/ttf/blackpast-blackpast-400.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Helios';
+    src: url('https://metamorphosis.wcewlug.org/fonts/helios-regular.ttf') format('truetype');
+  }
+  
+.intro {
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.single-intro-text {
+  background: rgba(33, 36, 43, 0.7); /* Semi-transparent background */
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  color: #ffffff; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.single-intro-text i {
+  font-size: 3em;
+  color: #18f98f; /* Icon color */
+  margin-bottom: 10px;
+}
+
+.single-intro-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.single-intro-text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.single-intro-text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+}
+
+.single-intro-text .btn-common {
+  background-color: #18f98f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.single-intro-text .btn-common:hover {
+  background-color: #16d68f; /* Hover color */
+}
+
+.single-intro-text .count-number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #18f98f;
+  color: #02280b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .single-intro-text {
+    margin-bottom: 30px;
+  }
+}
+.r3
+{
+    
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.rf
+{
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+}
+.col
+{
+    color: #16d68f;
+    width: 100px;
+    height:300px;
+}
+/* Use the custom fonts for headings */
+@font-face {
+    font-family: 'Blackpast';
+    src: url('https://metamorphosis.wcewlug.org/fonts/ttf/blackpast-blackpast-400.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helios';
+    src: url('https://metamorphosis.wcewlug.org/fonts/helios-regular.ttf') format('truetype');
+}
+
+/* Apply styles to the section title */
+.section-title {
+    font-family: 'Blackpast', sans-serif; /* Apply Blackpast font */
+    font-size: 48px; /* Adjust the font size as needed */
+    font-weight: 700; /* Apply the font weight similar to h1 */
+    color: white; /* Set the text color */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6), /* Adjusted shadow for better visibility */
+                 0 0 16px rgba(255, 255, 255, 0.4),
+                 0 0 24px rgba(255, 255, 255, 0.2);
+    margin: 20px 0; /* Adjust the margin for spacing */
+    text-align: center; /* Center the text */
+}
+.single-intro-text {
+    background: rgba(33, 36, 43, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    color: #ffffff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .single-intro-text:hover {
+    background: linear-gradient(146deg, rgb(227, 244, 253) 0%, rgb(170, 209, 226) 51%); /* Metallic hover effect */
+    transform: scale(1.05); /* Slightly enlarge the element */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+    color: #000; /* Change text color on hover */
+  }
+  
+  .single-intro-text:hover h3,
+  .single-intro-text:hover p,
+  .single-intro-text:hover h4 {
+    color: #000; /* Change all text to black */
+  }
+  
+  .single-intro-text:hover i {
+    color: #30dd8a; /* Adjust icon color on hover */
+  }
+  
+  .single-intro-text .btn-common:hover {
+    background-color: #16d68f; /* Change button background color */
+    color: #000; /* Change button text color */
+  }
+  /* Ensure the event container stacks vertically on mobile */
+.event-container {
+  display: flex;
+  flex-direction: row; /* Default for larger screens */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: center; /* Center contents */
+  gap: 20px; /* Gap between items */
+}
+
+@media screen and (max-width: 768px) {
+  .event-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+      align-items: center; /* Center items */
+  }
+}
+@media screen and (max-width: 480px) {
+  .event-container {
+      display: grid;
+      align-items: center;
+  }
+}
+/* Default styles for the event container */
+.event-container {
+  display: flex;
+  flex-direction: row; /* Default layout for larger screens */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center items */
+  gap: 20px; /* Space between items */
+}
+
+/* Media query for screens 768px and smaller */
+@media screen and (max-width: 768px) {
+  .event-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+      align-items: center; /* Center items */
+  }
+}
+
+/* Media query for screens less than 500px */
+@media screen and (max-width: 500px) {
+  .event-container {
+      flex-direction: column; /* Ensure a single column layout */
+  }
+
+  .single-intro-text {
+      width: 100%; /* Ensure each box takes full width */
+      margin-bottom: 20px; /* Space between boxes */
+  }
+}
